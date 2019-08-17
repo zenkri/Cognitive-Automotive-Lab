@@ -26,7 +26,7 @@ The following animated GIF shows the stop sign detetction is action.
 One key feature, wich made such high frames per second (fps) rate possible is the implementation of what we call "dynamic" region of intereset (ROI). The idea behind the dynamic ROI is very simple: Schring the ROI of the next frame to the region arround the currently detected sign. Once no sign is detected, the ROI expands back to the original size. The dynamic ROI is demonstrated in the following GIF.
 
 <p align="center">
-  <img src="readme_images/.gif">
+  <img src="readme_images/dynamic_roi.gif", width="800">
 </p>
 
 A part of the traffic sign detection task is the detetction of arrow traffic signs. For this task 4 possible detection outputs are possible: 1)no sign 2)traight 3) right 4) left. For this task a tree of 3 CNN networks as illustrated in the following graphic have been used. The main advantages of this structure are
