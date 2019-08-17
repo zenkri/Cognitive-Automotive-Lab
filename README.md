@@ -40,3 +40,20 @@ A part of the traffic sign detection task is the detetction of arrow traffic sig
 <p align="center">
   <img src="readme_images/dir_sign_tree.png" width="400">
 </p>
+
+## Obstacle Avoidance
+The obstacle detection algorithm performs as follows:
+
+* Apply ground removal using a contrast image
+* Selecting ROI based on a depth range
+* Use morphology to remove noise and smooth the contours
+* Extracting bounding box of obstacles from ROI
+* Evaluating the corresponding ROI in the color image to estimate if the detected object is an obstacle
+* Returning the position of the obstacle
+
+The position of the obstacle is then evaluated to determine weather it interfers with the planned path. In case of interference, the path is replaned to avoid the obstacle. The following GIF demostartes the algorithm.
+
+<p align="center">
+  <img src="readme_images/obstacle_avoidance.png" width="800">
+</p>
+
