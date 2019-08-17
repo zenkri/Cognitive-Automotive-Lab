@@ -57,3 +57,19 @@ The position of the obstacle is then evaluated to determine whether it interfere
   <img src="readme_images/obstacle_avoidance.gif" width="800">
 </p>
 
+## Navigation in Unknown Environments
+In regions where positioning is not possible, an autonomous driving vehicle should be able to safely navigate. This scenario is simulated through pillons, which the vehicle has to navigate through. This problem is solved in the following steps:
+
+* Synchronize and resize depth and color images
+* Distinguish pylon and ground in color image
+* Match pixels between depth and color image (stereo vision)
+* Generate points cloud and transform it to world coordinate
+* Project points cloud to Occupancy Grid Map and use Bayes rule to do the iteration
+* Generate path incrementally dependent on end point direction of current path
+* Search a lateral range in the forward direction of end point
+* Use potential field method to find the point with the lowest potential energy in lateral range
+
+
+
+
+
