@@ -93,7 +93,9 @@ for the steering control, a serie of a Stanley controller followed by a PID cont
 </p>
 
 # Competition Day
-We are very glad for being the winner of the competition of the 2019 edition.
+We are very glad for being the winning team of the competition of the 2019 edition.
 
-
+<p align="center">
+  <img src="readme_images/finals_vid.gif" width="800">
+</p>
 
