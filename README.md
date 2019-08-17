@@ -1,4 +1,27 @@
 # Cognitive Automotive Lab. 2019
+![BG](readme_images/BG.png)
+
 This software is our proposed solution for the Cognitive Automotive Lab organized by the Institute of Measurement and Control Systems (MRT) at Karlsruhe Institute of Technology (KIT) 
 
 ## Structure
+The software is composed of two main parts. A perception part, which aims to process RGBD images captured with a Microsoft Kinect 2 sensor. The second part of the the code is control. The subtasks of each part are illustrated in the following graphic. 
+
+![Structure](readme_images/structure.png)
+
+## Trafic signs detection
+To encrease the processing speed our groupe decided to not use the known detection algorithms like tiny YOLO ... but to craete a task specific solution, which can fulfill the requirements athigh speed. The following graphic illustrates the detection of stop signs. Hier, a color based reagion proposal in combination with a convolutional neural network (CNN) for the classification have been used.
+
+![stop_sign_detection_structure](readme_images/perception_structure.png)
+
+The following graphic shows the structure of the used CNN.
+
+![CNN](readme_images/CNN.png)
+
+A part of the traffic sign detection task is the detetction of arrow traffic signs. For this task 4 possible detection outputs are possible: 1)no sign 2)traight 3) right 4) left. For this task a tree of 3 CNN networks as illustrated in the following graphic have been used. The main advantages of this structure are
+
+* The ability to use the same data to train the tree small networks
+* The fast processing of false proposed reagions, as we don't need to go all the way through a complexer network with four aoutputs.
+
+<p align="center">
+  <img src="readme_images/dir_sign_tree.png" width="400">
+</p>
