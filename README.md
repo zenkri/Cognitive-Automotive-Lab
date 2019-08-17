@@ -76,9 +76,18 @@ In regions where positioning is not possible, an autonomous driving vehicle shou
 ## Yielding for crossing pedestrians
 One more challenge of the CAL was the detection of crossing pedestrian and yielding if he is crossing or driving if he is just side walking. This scenario was simulated with a remote controlled robot. The processing steps are illustrated in the following graphic.
 
-<p float="left">
-  <img src="readme_images/ped1.gif" width="400" />
-  <img src="readme_images/ped2.gif" width="400" /> 
+![ped_detection](readme_images/ped_detection.png)
+
+<p float="left" allign="center">
+  <img src="readme_images/ped1.gif" width="420" />
+  <img src="readme_images/ped2.gif" width="420" /> 
 </p>
 
+## Steering Control
+for the steering control a serie of a Stanley controller followed by a PID controller have been used. The latter had a significant effect stabilizing the vehicle at high speeds and especially at curves. The steering control sollution enabled a flawless running of the vehicle at maximal available speed 7,2km/h (4.47 miles/h). The two following GIFs show a comparison of the the steering stability with  (left) and without (right) the PID controller enabled.
 
+
+<p float="left" allign="center">
+  <img src="readme_images/pid.gif" width="420" />
+  <img src="readme_images/no_pid.gif" width="420" /> 
+</p>
