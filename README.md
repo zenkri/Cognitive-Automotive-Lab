@@ -54,6 +54,6 @@ The obstacle detection algorithm performs as follows:
 The position of the obstacle is then evaluated to determine weather it interfers with the planned path. In case of interference, the path is replaned to avoid the obstacle. The following GIF demostartes the algorithm.
 
 <p align="center">
-  <img src="readme_images/obstacle_avoidance.png" width="800">
+  <img src="readme_images/obstacle_avoidance.gif" width="800">
 </p>
 
