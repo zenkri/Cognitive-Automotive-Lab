@@ -73,5 +73,8 @@ In regions where positioning is not possible, an autonomous driving vehicle shou
   <img src="readme_images/unknown_env.gif" width="800">
 </p>
 
+## Yielding for crossing pedestrians
+One more challenge of the CAL was the detection of crossing pedestrian and yielding if he is crossing or driving if he is just side walking. This scenario was simulated with a remote controlled robot. The processing steps are illustrated in the following graphic.
+
 
 
