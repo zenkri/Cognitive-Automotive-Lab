@@ -79,8 +79,8 @@ One more challenge of the CAL was the detection of crossing pedestrian and yield
 ![ped_detection](readme_images/ped_detection.png)
 
 <p float="left" allign="center">
-  <img src="readme_images/ped1.gif" width="400" />
-  <img src="readme_images/ped2.gif" width="400" /> 
+  <img src="readme_images/ped1.gif" width="420" />
+  <img src="readme_images/ped2.gif" width="420" /> 
 </p>
 
 ## Steering Control
@@ -88,6 +88,12 @@ for the steering control, a serie of a Stanley controller followed by a PID cont
 
 
 <p float="left" allign="center">
-  <img src="readme_images/pid.gif" width="400" />
-  <img src="readme_images/no_pid.gif" width="400" /> 
+  <img src="readme_images/pid.gif" width="420" />
+  <img src="readme_images/no_pid.gif" width="420" /> 
 </p>
+
+# Competition Day
+We are very glad for being the winner of the competition of the 2019 edition.
+
+
+
