@@ -1,0 +1,10 @@
+<launch>
+
+
+<node pkg="neverdrive_obstacle_detection_ros_tool" name="obstacle_detection" type="obstacle_detection" output="screen" >
+    <param name="path_to_ground_depth" value="$(find neverdrive_obstacle_detection_ros_tool)/res/" />
+
+</node>
+
+
+</launch>

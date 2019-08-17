@@ -1,0 +1,6 @@
+<library path="lib/libtraffic_cones_detection_nodelet">
+<class name="neverdrive_traffic_cones_ros_tool/TrafficConesDetectionNodelet"
+       type="neverdrive_traffic_cones_ros_tool::TrafficConesDetectionNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>

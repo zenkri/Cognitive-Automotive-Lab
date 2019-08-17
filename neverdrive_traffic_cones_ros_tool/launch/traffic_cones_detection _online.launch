@@ -1,0 +1,43 @@
+<launch>
+
+    
+<include file="$(find vehicle_setup)/launch/camera_top.launch" />
+  <include file="$(find vehicle_setup)/launch/localization.launch" />
+
+  <include file="$(find vehicle_setup)/launch/urdf_publisher.launch" />
+
+  <include file="$(find joy_converter_ros_tool)/launch/joystick.launch" />
+
+ <include file="$(find motor_interface_ros_tool)/launch/motor_interface_node.launch" />
+
+  <include file="$(find anicar_lateral_control_ros_tool)/launch/lateral_controller_node.launch"/>
+  <include file="$(find anicar_longitudinal_control_ros_tool)/launch/longitudinal_controller_node.launch"/>
+
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch"/>
+
+ </include>
+
+
+
+
+
+
+    <node pkg="neverdrive_traffic_cones_ros_tool" name="traffic_cones_detection" type="traffic_cones_detection" output="screen" />
+
+    <node pkg="neverdrive_grid_map_ros_tool" name="grid_map_creation" type="grid_map_creation" />
+
+    <arg name="config" default="$(find path_publisher_ros_tool)/launch/params/path_planning_parameters.yaml" />
+
+    <node pkg="path_publisher_ros_tool" type="path_planning" name="path_planning" output="screen">
+        <rosparam command="load" file="$(arg config)"/>
+        <param name="exit_map_path" value="$(find path_publisher_ros_tool)/res/maps/"/>
+    </node>
+
+
+    <node pkg="rviz" type="rviz" output="screen" name="rviz" args="-d $(find neverdrive_traffic_cones_ros_tool)/res/traffic_cones.rviz" />
+
+
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure"/>
+
+
+</launch>

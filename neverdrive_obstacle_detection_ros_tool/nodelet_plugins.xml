@@ -1,0 +1,6 @@
+<library path="lib/libobstacle_detection_nodelet">
+<class name="neverdrive_obstacle_detection_ros_tool/ObstacleDetectionNodelet"
+       type="neverdrive_obstacle_detection_ros_tool::ObstacleDetectionNodelet" base_class_type="nodelet::Nodelet">
+  <description></description>
+</class>
+</library>
