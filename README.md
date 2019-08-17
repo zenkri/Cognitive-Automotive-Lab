@@ -13,7 +13,7 @@ To encrease the processing speed our groupe decided to not use the known detecti
 
 ![stop_sign_detection_structure](readme_images/perception_structure.png)
 
-The following graphic shows the structure of the used CNN.
+The following graphic shows the structure of the used CNN. The CNN is composed of 4 convolutional layers, 2 pooling layers, one bottleneck layer and 3 fully connected layers. The total number of trainable parameters is 7557. The training is done with arround a dozen thousand images.
 
 ![CNN](readme_images/CNN.png)
 
