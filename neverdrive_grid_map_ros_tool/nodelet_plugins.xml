@@ -1,6 +1,0 @@
-<library path="lib/libgrid_map_creation_nodelet">
-<class name="neverdrive_grid_map_ros_tool/GridMapCreationNodelet"
-       type="neverdrive_grid_map_ros_tool::GridMapCreationNodelet" base_class_type="nodelet::Nodelet">
-  <description></description>
-</class>
-</library>

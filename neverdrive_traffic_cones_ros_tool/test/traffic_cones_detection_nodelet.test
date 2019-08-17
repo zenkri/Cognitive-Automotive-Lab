@@ -1,6 +1,0 @@
-<launch>
-
-    <test test-name="traffic_cones_detection_nodelet_test" pkg="neverdrive_traffic_cones_ros_tool" type="traffic_cones_detection_nodelet-test" time-limit="60.0"/>
-    <include file="$(find neverdrive_traffic_cones_ros_tool)/launch/traffic_cones_detection_nodelet.launch"/>
-</launch>
-

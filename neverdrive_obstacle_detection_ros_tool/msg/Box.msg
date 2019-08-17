@@ -1,3 +1,0 @@
-string box_avoiding
-float64 box_location_x
-float64 box_location_y

@@ -1,9 +1,0 @@
-<launch>
-
-  <arg name="config" default="$(find neverdrive_grid_map_ros_tool)/launch/params/grid_map_creation_parameters.yaml" />
-
-  <node pkg="neverdrive_grid_map_ros_tool" type="grid_map_creation" name="grid_map_creation" output="screen">
-    <rosparam command="load" file="$(arg config)"/>
-  </node>
-
-</launch>

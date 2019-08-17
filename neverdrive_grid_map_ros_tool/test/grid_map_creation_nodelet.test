@@ -1,6 +1,0 @@
-<launch>
-
-    <test test-name="grid_map_creation_nodelet_test" pkg="neverdrive_grid_map_ros_tool" type="grid_map_creation_nodelet-test" time-limit="60.0"/>
-    <include file="$(find neverdrive_grid_map_ros_tool)/launch/grid_map_creation_nodelet.launch"/>
-</launch>
-
