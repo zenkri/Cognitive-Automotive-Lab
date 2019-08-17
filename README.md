@@ -91,3 +91,9 @@ for the steering control, a serie of a Stanley controller followed by a PID cont
   <img src="readme_images/pid.gif" width="420" />
   <img src="readme_images/no_pid.gif" width="420" /> 
 </p>
+
+# Competition Day
+We are very glad for being the winner of the competition of the 2019 edition.
+
+
+
