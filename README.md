@@ -69,7 +69,9 @@ In regions where positioning is not possible, an autonomous driving vehicle shou
 * Search a lateral range in the forward direction of end point
 * Use potential field method to find the point with the lowest potential energy in lateral range
 
-
+<p align="center">
+  <img src="readme_images/unknown_env.gif" width="800">
+</p>
 
 
 
