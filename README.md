@@ -13,6 +13,7 @@ To encrease the processing speed our groupe decided to not use the known detecti
 
 ![stop_sign_detection_structure](readme_images/perception_structure.png)
 
+### Convolutional Neural Network
 The following graphic shows the structure of the used CNN. The CNN is composed of 4 convolutional layers, 2 pooling layers, one bottleneck layer and 3 fully connected layers. The total number of trainable parameters is 7557. The training is done with arround a dozen thousand images.
 
 ![CNN](readme_images/CNN.png)
@@ -23,12 +24,14 @@ The following animated GIF shows the stop sign detetction is action.
   <img src="readme_images/stop_sign_detection.gif" width="800">
 </p>
 
+### Dynamic Region Of Interest
 One key feature, wich made such high frames per second (fps) rate possible is the implementation of what we call "dynamic" region of intereset (ROI). The idea behind the dynamic ROI is very simple: Schring the ROI of the next frame to the region arround the currently detected sign. Once no sign is detected, the ROI expands back to the original size. The dynamic ROI is demonstrated in the following GIF.
 
 <p align="center">
   <img src="readme_images/dynamic_roi.gif", width="800">
 </p>
 
+### Arrow Traffic Sign
 A part of the traffic sign detection task is the detetction of arrow traffic signs. For this task 4 possible detection outputs are possible: 1)no sign 2)traight 3) right 4) left. For this task a tree of 3 CNN networks as illustrated in the following graphic have been used. The main advantages of this structure are
 
 * The ability to use the same data to train the tree small networks
