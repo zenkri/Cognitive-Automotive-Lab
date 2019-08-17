@@ -1,4 +1,5 @@
 # Cognitive Automotive Lab. 2019
+![BG](readme_images/BG.png)
 
 This software is our proposed solution for the Cognitive Automotive Lab organized by the Institute of Measurement and Control Systems (MRT) at Karlsruhe Institute of Technology (KIT) 
 
