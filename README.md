@@ -58,23 +58,23 @@ The position of the obstacle is then evaluated to determine whether it interfere
 </p>
 
 ## Navigation in Unknown Environments
-In regions where positioning is not possible, an autonomous driving vehicle should be able to safely navigate. This scenario is simulated through pillons, which the vehicle has to navigate through. This problem is solved in the following steps:
+In regions where positioning is not possible, an autonomous driving vehicle should be able to safely navigate. This scenario is simulated through pillows, which the vehicle has to navigate through. This problem is solved in the following steps:
 
 * Synchronize and resize depth and color images
 * Distinguish pylon and ground in color image
-* Match pixels between depth and color image (stereo vision)
-* Generate points cloud and transform it to world coordinate
-* Project points cloud to Occupancy Grid Map and use Bayes rule to do the iteration
-* Generate path incrementally dependent on end point direction of current path
-* Search a lateral range in the forward direction of end point
-* Use potential field method to find the point with the lowest potential energy in lateral range
+* Match pixels between depth and color image (stereovision)
+* Generate points cloud and transform it into the world coordinates
+* Project points cloud to Occupancy Grid Map and uses Bayes rule to do the iteration
+* Generate path incrementally dependent on endpoint direction of the current path
+* Search a lateral range in the forward direction of endpoint
+* Use potential field method to find the point with the lowest potential energy in the lateral range
 
 <p align="center">
   <img src="readme_images/unknown_env.gif" width="800">
 </p>
 
 ## Yielding for crossing pedestrians
-One more challenge of the CAL was the detection of crossing pedestrian and yielding if he is crossing or driving if he is just side walking. This scenario was simulated with a remote controlled robot. The processing steps are illustrated in the following graphic.
+One more challenge of the CAL was the detection of crossing pedestrian and yielding if he is crossing or driving if he is just side walking. This scenario was simulated with a remote-controlled robot. The processing steps are illustrated in the following graphic.
 
 ![ped_detection](readme_images/ped_detection.png)
 
@@ -84,7 +84,7 @@ One more challenge of the CAL was the detection of crossing pedestrian and yield
 </p>
 
 ## Steering Control
-for the steering control a serie of a Stanley controller followed by a PID controller have been used. The latter had a significant effect stabilizing the vehicle at high speeds and especially at curves. The steering control sollution enabled a flawless running of the vehicle at maximal available speed 7,2km/h (4.47 miles/h). The two following GIFs show a comparison of the the steering stability with  (left) and without (right) the PID controller enabled.
+for the steering control, a serie of a Stanley controller followed by a PID controller have been used. The latter had a significant effect stabilizing the vehicle at high speeds and especially at curves. The steering control solution enabled a flawless running of the vehicle at maximal available speed 7,2km/h (4.47 miles/h). The two following GIFs show a comparison of the steering stability with  (left) and without (right) the PID controller enabled.
 
 
 <p float="left" allign="center">
